@@ -1,0 +1,14 @@
+.box
+  +size(100px)
+  background-color: $link-color
+  text-align: center
+  margin: auto
+  @include grid-column(3)
+  @include grid-shift(6)
+
+section
+  @include grid-column(6)
+  color: white
+
+.container
+  @include grid-container
