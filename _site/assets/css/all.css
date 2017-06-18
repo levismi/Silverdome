@@ -223,18 +223,18 @@ nav {
   margin-top: 0; }
   .hero h2 {
     color: white;
-    position: relative;
+    position: absolute;
     margin: 0;
     left: 0;
-    top: 20%;
+    top: 10%;
     width: 100%;
     text-align: center;
     font-size: 800%; }
   .hero p {
     color: white;
-    position: relative;
+    position: absolute;
     left: 0;
-    top: 10%;
+    top: 30%;
     width: 100%;
     text-align: center;
     font-size: 200%; }
@@ -244,18 +244,8 @@ footer {
   clear: both;
   height: 60px;
   text-align: center; }
-
-.box {
-  height: 100px;
-  width: 100px;
-  background-color: #1BE2DF;
-  text-align: center;
-  margin: auto;
-  width: calc(25% - 25px);
-  float: left;
-  margin-left: 20px;
-  left: calc(50% - 30px + 20px);
-  position: relative; }
+  footer a {
+    color: red; }
 
 section {
   width: calc(50% - 30px);
@@ -271,5 +261,43 @@ section {
 .trailer h2 {
   margin: 0;
   padding: 0; }
+
+.articles {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px); }
+  .articles::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.box_large {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  margin-top: 80px;
+  display: block;
+  background-image: url("../img/placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px;
+  margin-left: calc(25% - 25px + 40px); }
+
+.box_small {
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  margin: 10px;
+  display: block;
+  background-image: url("../img/placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
 
 

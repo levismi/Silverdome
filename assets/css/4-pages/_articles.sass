@@ -1,0 +1,31 @@
+.articles
+
+  @include grid-collapse
+  @include grid-container
+
+.box_large
+  +size(150px)
+  text-align: center
+  margin-top: 80px
+  display: block
+
+  background-image: url("../img/placeholder.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  @include grid-column(6)
+  @include grid-push(3)
+
+.box_small
+  +size(75px)
+  text-align: center
+  margin: 10px
+  display: block
+
+  background-image: url("../img/placeholder.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  @include grid-column(3)
