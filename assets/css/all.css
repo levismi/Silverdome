@@ -283,33 +283,80 @@ footer {
   padding: 40px;
   height: 550px; }
 
-.hero_cast {
+.cast_glenn {
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/glenn_snow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .cast_glenn section {
+    margin-left: calc(8.33333% - 21.66667px + 40px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(35, 43, 56, 0.8);
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+    width: 300px; }
+  .cast_glenn h3 {
+    text-align: center; }
+
+.cast_the_girl {
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/glenn+girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .cast_the_girl section {
+    margin-left: calc(58.33333% - 31.66667px + 40px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(35, 43, 56, 0.8);
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+    width: 300px; }
+  .cast_the_girl h3 {
+    text-align: center; }
+
+.crew {
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+  height: 100vh;
+  width: 100%;
   background-image: url("../img/cast_hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 100%;
-  background-color: #fff;
-  text-align: center;
-  margin-top: 0; }
-  .hero_cast h2 {
+  background-position: center; }
+  .crew section {
+    margin-left: calc(8.33333% - 21.66667px + 40px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(35, 43, 56, 0.8);
     color: white;
-    position: absolute;
-    margin: 0;
-    left: 0;
-    top: 10%;
-    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
     text-align: center;
-    font-size: 700%; }
-  .hero_cast p {
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 28%;
-    width: 100%;
-    text-align: center;
-    font-size: 175%; }
+    height: 300px;
+    width: 300px; }
+  .crew h3 {
+    text-align: center; }
 
 .hero_story {
   background-image: url("../img/story_hero.jpg");
@@ -338,5 +385,13 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 175%; }
+
+.story section {
+  width: calc(83.33333% - 36.66667px);
+  float: left;
+  margin-left: 20px;
+  left: calc(8.33333% - 21.66667px + 20px);
+  position: relative;
+  margin-top: 10px; }
 
 
