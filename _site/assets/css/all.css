@@ -182,7 +182,7 @@ th {
   padding: 0; }
 
 body {
-  background-color: #edf6ff;
+  background-color: #fff;
   font-size: 100%;
   line-height: 1.6;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -203,13 +203,15 @@ li {
   margin-left: 20px; }
 
 nav {
-  color: #black;
-  background-color: none;
-  height: 40px;
-  padding-right: 10px;
-  float: right; }
+  background-color: #2d2626;
+  width: 100%;
+  height: 55px; }
   nav a {
-    color: red; }
+    color: white; }
+  nav ul {
+    display: inline-block;
+    float: right;
+    padding-right: 20px; }
 
 .hero {
   background-image: url("../img/hero-bg.jpg");
@@ -240,36 +242,12 @@ nav {
     font-size: 200%; }
 
 footer {
-  background-color: inherit;
+  background-color: #2d2626;
   clear: both;
-  height: 60px;
+  height: 120px;
   text-align: center; }
   footer a {
     color: red; }
-
-section {
-  width: calc(50% - 30px);
-  float: left;
-  margin-left: 20px;
-  color: black; }
-
-.container::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.trailer h2 {
-  margin: 0;
-  padding: 0; }
-
-.articles {
-  margin-left: -20px;
-  margin-right: -20px;
-  width: calc(100% + 40px); }
-  .articles::after {
-    clear: both;
-    content: "";
-    display: block; }
 
 .box_large {
   height: 150px;
@@ -290,7 +268,6 @@ section {
   height: 75px;
   width: 75px;
   text-align: center;
-  margin: 10px;
   display: block;
   background-image: url("../img/placeholder.jpg");
   background-repeat: no-repeat;
@@ -298,6 +275,68 @@ section {
   background-position: center;
   width: calc(25% - 25px);
   float: left;
-  margin-left: 20px; }
+  margin-left: 20px;
+  left: calc(25% - 25px + 20px);
+  position: relative; }
+
+.trailer {
+  padding: 40px;
+  height: 550px; }
+
+.hero_cast {
+  background-image: url("../img/cast_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 0; }
+  .hero_cast h2 {
+    color: white;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 700%; }
+  .hero_cast p {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 100%;
+    text-align: center;
+    font-size: 175%; }
+
+.hero_story {
+  background-image: url("../img/story_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 0; }
+  .hero_story h2 {
+    color: white;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 700%; }
+  .hero_story p {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 100%;
+    text-align: center;
+    font-size: 175%; }
 
 
