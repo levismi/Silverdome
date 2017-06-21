@@ -1,7 +1,7 @@
 .box_large
   +size(150px)
   text-align: center
-  margin-top: 80px
+  margin-top: 30px
   display: block
 
   background-image: url("../img/placeholder.jpg")
@@ -12,10 +12,12 @@
   @include grid-column(6)
   @include grid-push(3)
 
-.box_small
+.box_small-1
   +size(75px)
   text-align: center
   display: block
+  margin-top: 20px
+  margin-bottom: 20px
 
   background-image: url("../img/placeholder.jpg")
   background-repeat: no-repeat
@@ -23,4 +25,18 @@
   background-position: center
 
   @include grid-column(3)
-  @include grid-shift(3)
+  @include grid-push(3)
+
+.box_small-2
+  +size(75px)
+  text-align: center
+  display: block
+  margin-top: 20px
+  margin-bottom: 20px
+
+  background-image: url("../img/placeholder.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  @include grid-column(3)

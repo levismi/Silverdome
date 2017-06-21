@@ -189,12 +189,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+h1 {
+  color: white;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 800%; }
+
+h2 {
+  text-align: center; }
+
 a {
   color: #fff;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #75eeed; }
+    color: #7b8eac; }
 
 li {
   text-decoration: none;
@@ -218,17 +231,17 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  background-attachment: fixed;
+  height: 165vh;
   width: 100%;
-  background-color: #fff;
   text-align: center;
   margin-top: 0; }
-  .hero h2 {
+  .hero h1 {
     color: white;
     position: absolute;
     margin: 0;
     left: 0;
-    top: 10%;
+    top: 15%;
     width: 100%;
     text-align: center;
     font-size: 800%; }
@@ -236,24 +249,59 @@ nav {
     color: white;
     position: absolute;
     left: 0;
-    top: 30%;
+    top: 35%;
     width: 100%;
     text-align: center;
     font-size: 200%; }
+
+.articles {
+  position: relative;
+  top: 55%;
+  left: 0;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
 
 footer {
   background-color: #2d2626;
   clear: both;
   height: 120px;
   text-align: center; }
+  footer ul {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+    margin-left: calc(25% - 25px + 40px); }
+  footer li {
+    display: inline-block;
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+    margin-left: calc(25% - 25px + 40px); }
   footer a {
-    color: red; }
+    color: white; }
+
+.sm-div {
+  margin-right: 20px;
+  float: right;
+  position: relative;
+  left: 0;
+  top: 60%; }
+
+.sm {
+  width: 40px;
+  height: 40px; }
 
 .box_large {
   height: 150px;
   width: 150px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 30px;
   display: block;
   background-image: url("../img/placeholder.jpg");
   background-repeat: no-repeat;
@@ -264,11 +312,13 @@ footer {
   margin-left: 20px;
   margin-left: calc(25% - 25px + 40px); }
 
-.box_small {
+.box_small-1 {
   height: 75px;
   width: 75px;
   text-align: center;
   display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-image: url("../img/placeholder.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,8 +326,22 @@ footer {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
-  left: calc(25% - 25px + 20px);
-  position: relative; }
+  margin-left: calc(25% - 25px + 40px); }
+
+.box_small-2 {
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url("../img/placeholder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px; }
 
 .trailer {
   padding: 40px;
@@ -305,8 +369,6 @@ footer {
     text-align: center;
     height: 300px;
     width: 300px; }
-  .cast_glenn h3 {
-    text-align: center; }
 
 .cast_the_girl {
   margin: 0;
@@ -330,8 +392,6 @@ footer {
     text-align: center;
     height: 300px;
     width: 300px; }
-  .cast_the_girl h3 {
-    text-align: center; }
 
 .crew {
   margin: 0;
@@ -355,8 +415,6 @@ footer {
     text-align: center;
     height: 300px;
     width: 300px; }
-  .crew h3 {
-    text-align: center; }
 
 .hero_story {
   background-image: url("../img/story_hero.jpg");
@@ -368,15 +426,6 @@ footer {
   background-color: #fff;
   text-align: center;
   margin-top: 0; }
-  .hero_story h2 {
-    color: white;
-    position: absolute;
-    margin: 0;
-    left: 0;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    font-size: 700%; }
   .hero_story p {
     color: white;
     position: absolute;

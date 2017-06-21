@@ -4,5 +4,32 @@ footer
   height: 120px
   text-align: center
 
+  ul
+    text-decoration: none
+    text-align: center
+    display: block
+    margin-top: 20px
+    padding: 0
+
+    @include grid-column(6)
+    @include grid-push(3)
+
+  li
+    display: inline-block
+
+    @include grid-column(6)
+    @include grid-push(3)
   a
-    color: red
+    color: white
+
+.sm-div
+  margin-right: 20px
+  float: right
+  position: relative
+  left: 0
+  top: 60%
+
+
+.sm
+  width: 40px
+  height: 40px

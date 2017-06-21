@@ -3,18 +3,18 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-  height: 600px
+  background-attachment: fixed
+  height: 165vh
   width: 100%
-  background-color: #fff
   text-align: center
   margin-top: 0
 
-  h2
+  h1
     color: white
     position: absolute
     margin: 0
     left: 0
-    top: 10%
+    top: 15%
     width: 100%
     text-align: center
     font-size: 800%
@@ -23,7 +23,14 @@
     color: white
     position: absolute
     left: 0
-    top: 30%
+    top: 35%
     width: 100%
     text-align: center
     font-size: 200%
+
+.articles
+  position: relative
+  top: 55%
+  left: 0
+
+  @include grid-column(12)
