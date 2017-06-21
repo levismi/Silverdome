@@ -32,3 +32,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+sass:
+  sass_dir: assets/css
+  style: nested
