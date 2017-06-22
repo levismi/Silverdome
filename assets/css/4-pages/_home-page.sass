@@ -4,13 +4,17 @@
   margin-top: 30px
   display: block
 
-  background-image: url("../img/placeholder.jpg")
+  background-image: url("../img/yahoo_silverdome.png")
   background-repeat: no-repeat
   background-size: cover
   background-position: center
 
   @include grid-column(6)
   @include grid-push(3)
+
+  box-shadow: 4px 4px 4px $box-shadow
+  // @include border-top-radius(5px)
+  // @include border-bottom-radius(5px)
 
 .box_small-1
   +size(75px)
@@ -27,6 +31,10 @@
   @include grid-column(3)
   @include grid-push(3)
 
+  box-shadow: 4px 4px 4px $box-shadow
+  // @include border-top-radius(5px)
+  // @include border-bottom-radius(5px)
+
 .box_small-2
   +size(75px)
   text-align: center
@@ -40,3 +48,7 @@
   background-position: center
 
   @include grid-column(3)
+
+  box-shadow: 4px 4px 4px $box-shadow
+  // @include border-top-radius(5px)
+  // @include border-bottom-radius(5px)

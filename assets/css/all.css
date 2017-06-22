@@ -225,6 +225,13 @@ nav {
     display: inline-block;
     float: right;
     padding-right: 20px; }
+  nav h3 {
+    font-size: 160%;
+    margin: 0;
+    padding-left: 20px;
+    display: inline-block;
+    position: relative;
+    top: 10%; }
 
 .hero {
   background-image: url("../img/hero-bg.jpg");
@@ -303,14 +310,16 @@ footer {
   text-align: center;
   margin-top: 30px;
   display: block;
-  background-image: url("../img/placeholder.jpg");
+  background-image: url("../img/yahoo_silverdome.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: calc(50% - 30px);
   float: left;
   margin-left: 20px;
-  margin-left: calc(25% - 25px + 40px); }
+  margin-left: calc(25% - 25px + 40px);
+  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8);
+  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8); }
 
 .box_small-1 {
   height: 75px;
@@ -326,7 +335,9 @@ footer {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
-  margin-left: calc(25% - 25px + 40px); }
+  margin-left: calc(25% - 25px + 40px);
+  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8);
+  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8); }
 
 .box_small-2 {
   height: 75px;
@@ -341,7 +352,9 @@ footer {
   background-position: center;
   width: calc(25% - 25px);
   float: left;
-  margin-left: 20px; }
+  margin-left: 20px;
+  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8);
+  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8); }
 
 .trailer {
   padding: 20px 40px;
