@@ -4,10 +4,15 @@
   background-size: cover
   background-position: center
   background-attachment: fixed
-  height: 165vh
+  height: 200vh
   width: 100%
   text-align: center
   margin-top: 0
+
+  img
+    @include grid-column(8)
+    @include grid-push(2)
+    margin-top: 100px
 
   h1
     color: white
