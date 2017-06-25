@@ -324,8 +324,8 @@ footer {
   float: left;
   margin-left: 20px;
   margin-left: calc(25% - 25px + 40px);
-  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8);
-  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8); }
+  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4);
+  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4); }
 
 .box_small-1 {
   height: 75px;
@@ -342,8 +342,8 @@ footer {
   float: left;
   margin-left: 20px;
   margin-left: calc(25% - 25px + 40px);
-  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8);
-  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8); }
+  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4);
+  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4); }
 
 .box_small-2 {
   height: 75px;
@@ -359,8 +359,8 @@ footer {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
-  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8);
-  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.8); }
+  -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4);
+  box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4); }
 
 .trailer {
   padding: 20px 40px;
@@ -454,12 +454,16 @@ footer {
     text-align: center;
     font-size: 175%; }
 
-.story section {
+.story {
+  background-color: rgba(15, 15, 15, 0.1);
   width: calc(83.33333% - 36.66667px);
   float: left;
   margin-left: 20px;
-  left: calc(8.33333% - 21.66667px + 20px);
-  position: relative;
-  margin-top: 10px; }
+  margin-left: calc(8.33333% - 21.66667px + 40px); }
+  .story section {
+    width: calc(83.33333% - 36.66667px);
+    float: left;
+    margin-left: 20px;
+    margin-left: calc(8.33333% - 21.66667px + 40px); }
 
 

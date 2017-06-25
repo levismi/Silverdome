@@ -19,8 +19,13 @@
     font-size: 175%
 
 .story
-  section
-    @include grid-column(10)
-    @include grid-shift(1)
 
-    margin-top: 10px
+  background-color: $box-shadow-light
+
+  @include grid-column(10)
+  @include grid-push(1)
+
+  section
+
+    @include grid-column(10)
+    @include grid-push(1)
