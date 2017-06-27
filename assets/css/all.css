@@ -368,7 +368,7 @@ footer {
 
 .cast_glenn {
   margin: 0;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0 20px 0;
   height: 100vh;
   width: 100%;
   background-image: url("../img/glenn_snow.jpg");
@@ -387,9 +387,10 @@ footer {
     padding: 10px;
     text-align: center;
     height: 300px;
-    width: 300px; }
+    width: 30%;
+    overflow: scroll; }
 
-.cast_the_girl {
+.cast_carmen {
   margin: 0;
   padding: 20px 0px 20px 0px;
   height: 100vh;
@@ -398,7 +399,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  .cast_the_girl section {
+  .cast_carmen section {
     margin-left: calc(58.33333% - 31.66667px + 40px);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -410,7 +411,8 @@ footer {
     padding: 10px;
     text-align: center;
     height: 300px;
-    width: 300px; }
+    width: 30%;
+    overflow: scroll; }
 
 .crew {
   margin: 0;
@@ -422,7 +424,7 @@ footer {
   background-size: cover;
   background-position: center; }
   .crew section {
-    margin-left: calc(8.33333% - 21.66667px + 40px);
+    margin-left: calc(25% - 25px + 40px);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -433,7 +435,26 @@ footer {
     padding: 10px;
     text-align: center;
     height: 300px;
-    width: 300px; }
+    width: 50%;
+    overflow: scroll; }
+
+.crew_list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  height: 73%;
+  width: 30%; }
+  .crew_list li {
+    text-align: left;
+    float: left; }
+
+.crew_display {
+  display: inline-block;
+  float: right;
+  height: 73%;
+  width: 70%;
+  overflow: scroll; }
 
 .hero_story {
   background-image: url("../img/story_hero.jpg");

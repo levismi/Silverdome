@@ -1,26 +1,6 @@
-// .hero_cast
-//   background-image: url("../img/cast_hero.jpg")
-//   background-repeat: no-repeat
-//   background-size: cover
-//   background-position: center
-//   height: 400px
-//   width: 100%
-//   background-color: #fff
-//   text-align: center
-//   margin-top: 0
-//
-//   p
-//     color: white
-//     position: absolute
-//     left: 0
-//     top: 28%
-//     width: 100%
-//     text-align: center
-//     font-size: 175%
-
 .cast_glenn
   margin: 0
-  padding: 20px 0px 20px 0px
+  padding: 20px 0 20px 0
   height: 100vh
   width: 100%
 
@@ -40,9 +20,10 @@
     padding: 10px
     text-align: center
     height: 300px
-    width: 300px
+    width: 30%
+    overflow: scroll
 
-.cast_the_girl
+.cast_carmen
   margin: 0
   padding: 20px 0px 20px 0px
   height: 100vh
@@ -64,7 +45,8 @@
     padding: 10px
     text-align: center
     height: 300px
-    width: 300px
+    width: 30%
+    overflow: scroll
 
 .crew
   margin: 0
@@ -78,7 +60,7 @@
   background-position: center
 
   section
-    @include grid-push(1)
+    @include grid-push(3)
     @include border-top-radius(10px)
     @include border-bottom-radius(10px)
 
@@ -88,4 +70,24 @@
     padding: 10px
     text-align: center
     height: 300px
-    width: 300px
+    width: 50%
+    overflow: scroll
+
+.crew_list
+  margin: 0
+  padding: 0
+  display: inline-block
+  float: left
+  height: 73%
+  width: 30%
+
+  li
+    text-align: left
+    float: left
+
+.crew_display
+  display: inline-block
+  float: right
+  height: 73%
+  width: 70%
+  overflow: scroll
