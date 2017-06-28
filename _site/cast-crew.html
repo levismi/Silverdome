@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Home Page</title>
+  <title> Cast & Crew </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/all.css" />
@@ -15,7 +15,7 @@
     <nav>
       <h3><a href="index.html">Silverdome</a></h3>
       <ul>
-        <li><a href="trial.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="cast-crew.html">Cast & Crew</a></li>
         <li><a href="story.html">The Story</a></li>
         <li><a href="trailer.html">Trailer</a></li>
@@ -26,11 +26,14 @@
 
   <div class="content">
     <script>
+
 $(document).ready(function(){
-    $(".cast_glenn").click(function(){
-        $(".cast_glenn p").slideToggle(1000);
+    $(".crew_list").click(function(){
+        $(".crew-display p").slideToggle(1000);
     });
+
 });
+
 </script>
 
 <div class="cast_glenn">
@@ -55,6 +58,7 @@ $(document).ready(function(){
 <div class="cast_carmen">
   <section>
     <h2>Carmen Serano</h2>
+    <div class="scroll">
     <p>Franco’s wife, 'Carmen Franco', finds her broken
       husband in the Dome, and sets about the hard work of understanding his
       pain and loving him through it.
@@ -72,16 +76,35 @@ $(document).ready(function(){
       Carmen currently tours as a public speaker/advocate for sexual assault
       survivors, and is working on the manuscript for her upcoming memoir,
       ‘Worthless'.</p>
+    </div>
   </section>
 </div>
+
+<div class="cast_francisco">
+  <section>
+    <h2>Francisco Posada</h2>
+    <div class="scroll">
+    <p>Starring in the role of Jack and Carmen Franco's son, 'Alex', is SAG
+      member FRANCISCO POSADA, a young actor who is quickly getting noticed on
+      A-list shows like "Chicago Fire" and a recurring role on "Empire",
+      despite only being 23 years old.  In addition to his feature role on
+      Silverdome, Posada can be recognized as 'Blue Beetle' in the smash-hit
+      video game "Injustice 2".</p>
+    </div>
+  </section>
+</div>
+
 
 <div class="crew">
   <section>
     <h2>The Crew</h2>
-    <div class="crew_list">
+    <div class="crew_list" id="borderRight">
       <ul>
-        <li>Ted Kluck</li>
-        <li>Chris Renger</li>
+        <li id="tedKluck"><h3>Ted Kluck</h3></li>
+        <li id="travisAndrews"><h3>Travis Andrews</h3></li>
+        <li id="chrisRegner"><h3>Chris Regner</h3></li>
+        <li id="kliffKingsbury"><h3>Kliff Kingsbury</h3></li>
+        <li id="brettHartmann"><h3>Brett Hartmann</h3></li>
       </ul>
     </div>
     <div class="crew_display">

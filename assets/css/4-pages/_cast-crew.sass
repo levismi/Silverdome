@@ -1,52 +1,41 @@
-.cast_glenn
+.cast_glenn, .cast_carmen, .cast_francisco
   margin: 0
   padding: 20px 0 20px 0
   height: 100vh
   width: 100%
-
-  background-image: url("../img/glenn_snow.jpg")
   background-repeat: no-repeat
   background-size: cover
   background-position: center
+
+  section
+    @include border-top-radius(10px)
+    @include border-bottom-radius(10px)
+
+    background: $transparent-grey
+    color: white
+    margin-top: 20px
+    padding: 10px
+    text-align: center
+    height: 300px
+    width: 30%
+
+.cast_glenn
+  background-image: url("../img/glenn_snow.jpg")
 
   section
     @include grid-push(1)
-    @include border-top-radius(10px)
-    @include border-bottom-radius(10px)
-
-    background: $transparent-grey
-    color: white
-    margin-top: 20px
-    padding: 10px
-    text-align: center
-    height: 300px
-    width: 30%
-    overflow: scroll
 
 .cast_carmen
-  margin: 0
-  padding: 20px 0px 20px 0px
-  height: 100vh
-  width: 100%
-
   background-image: url("../img/glenn+girl.jpg")
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
 
   section
     @include grid-push(7)
-    @include border-top-radius(10px)
-    @include border-bottom-radius(10px)
 
-    background: $transparent-grey
-    color: white
-    margin-top: 20px
-    padding: 10px
-    text-align: center
-    height: 300px
-    width: 30%
-    overflow: scroll
+.cast_francisco
+  background-image: url("../img/francisco.png")
+
+  section
+    @include grid-push(7)
 
 .crew
   margin: 0
@@ -79,15 +68,24 @@
   display: inline-block
   float: left
   height: 73%
-  width: 30%
+  width: 40%
+  letter-spacing: 1px
 
   li
+    margin: 0
     text-align: left
     float: left
+
 
 .crew_display
   display: inline-block
   float: right
   height: 73%
-  width: 70%
+  width: 60%
   overflow: scroll
+  text-align: left
+
+.scroll
+  overflow: scroll
+  height: 80%
+  text-align: left
