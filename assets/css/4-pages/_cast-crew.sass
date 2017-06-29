@@ -19,6 +19,11 @@
     height: 300px
     width: 30%
 
+    // for ScrollMagic to make magic
+    opacity: 0
+    transform: translateY(50px)
+    transition: all 1s ease-out
+
 .cast_glenn
   background-image: url("../img/glenn_snow.jpg")
 
@@ -62,6 +67,12 @@
     width: 50%
     overflow: scroll
 
+    // for ScrollMagic to make magic
+    opacity: 0
+    transform: translateY(50px)
+    transition: all 1s ease-out
+
+
 .crew_list
   margin: 0
   padding: 0
@@ -76,6 +87,9 @@
     text-align: left
     float: left
 
+  li:hover
+    font-size: 120%
+    color: grey
 
 .crew_display
   display: inline-block
@@ -89,3 +103,11 @@
   overflow: scroll
   height: 80%
   text-align: left
+
+section.fade-in
+  opacity: 1
+  transform: translateY(0)
+
+
+
+// Page Scrollmagic

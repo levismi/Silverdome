@@ -391,7 +391,14 @@ footer {
     padding: 10px;
     text-align: center;
     height: 300px;
-    width: 30%; }
+    width: 30%;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
 
 .cast_glenn {
   background-image: url("../img/glenn_snow.jpg"); }
@@ -430,7 +437,14 @@ footer {
     text-align: center;
     height: 300px;
     width: 50%;
-    overflow: scroll; }
+    overflow: scroll;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
 
 .crew_list {
   margin: 0;
@@ -444,6 +458,9 @@ footer {
     margin: 0;
     text-align: left;
     float: left; }
+  .crew_list li:hover {
+    font-size: 120%;
+    color: grey; }
 
 .crew_display {
   display: inline-block;
@@ -457,6 +474,12 @@ footer {
   overflow: scroll;
   height: 80%;
   text-align: left; }
+
+section.fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0); }
 
 .hero_story {
   background-image: url("../img/story_hero.jpg");

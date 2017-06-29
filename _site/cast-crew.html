@@ -6,7 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/all.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,19 +24,8 @@
   </header>
 
   <div class="content">
-    <script>
-
-$(document).ready(function(){
-    $(".crew_list").click(function(){
-        $(".crew-display p").slideToggle(1000);
-    });
-
-});
-
-</script>
-
-<div class="cast_glenn">
-  <section>
+    <div class="cast_glenn">
+  <section class="castCrew" id="glennScene">
     <h2>Glenn Pakulak</h2>
     <div class="scroll">
     <p>Plays 'Jack Franco', an ex-quarterback in middle-age, whose best days
@@ -56,7 +44,7 @@ $(document).ready(function(){
 </div>
 
 <div class="cast_carmen">
-  <section>
+  <section class="castCrew" id="carmenScene">
     <h2>Carmen Serano</h2>
     <div class="scroll">
     <p>Franco’s wife, 'Carmen Franco', finds her broken
@@ -81,7 +69,7 @@ $(document).ready(function(){
 </div>
 
 <div class="cast_francisco">
-  <section>
+  <section class="castCrew" id="franciscoScene">
     <h2>Francisco Posada</h2>
     <div class="scroll">
     <p>Starring in the role of Jack and Carmen Franco's son, 'Alex', is SAG
@@ -96,7 +84,7 @@ $(document).ready(function(){
 
 
 <div class="crew">
-  <section>
+  <section class="castCrew" id="crewScene">
     <h2>The Crew</h2>
     <div class="crew_list" id="borderRight">
       <ul>
@@ -108,15 +96,16 @@ $(document).ready(function(){
       </ul>
     </div>
     <div class="crew_display">
-      <p>Spicy jalapeno bacon ipsum dolor amet ball tip jerky meatloaf salami capicola ham hock ham leberkas burgdoggen kevin ground round meatball. Biltong spare ribs corned beef cow jerky swine capicola sausage pork belly leberkas pastrami chuck jowl frankfurter. Pork chop turducken bresaola, kevin kielbasa ground round beef ball tip leberkas. Boudin ham tail ball tip, burgdoggen jerky fatback swine leberkas prosciutto kevin turkey. Pork burgdoggen drumstick rump leberkas, frankfurter strip steak cupim filet mignon ball tip ham shankle capicola t-bone porchetta. Pork belly tongue hamburger, chicken meatloaf ball tip pancetta strip steak.
+      <p id="kluckBio" style="display: none"><strong>Screenwriter - </strong>winner of a Michigan Notable Book award in 2008 for his football memoir, Paper Tiger: One Athlete's Journey to the Underbelly of Pro Football. He has authored books on topics ranging from Mike Tyson to the evangelical church, and his journalism has appeared in ESPN the Magazine, Christianity Today and many other outlets.</p>
 
-Prosciutto shoulder biltong corned beef. Flank venison shoulder, cupim biltong fatback pastrami landjaeger bacon frankfurter short ribs strip steak. Fatback tail venison sirloin filet mignon pancetta hamburger ham hock, bacon alcatra chuck. Jowl kevin shoulder tongue sausage. Fatback t-bone pork loin strip steak venison shank.
+      <p id="andrewsBio" style="display: none"><strong>Director - </strong>An industry veteran that has worked as a director of photography for the past 10 years in broadcast television, Travis' specialty with Reality and Documentary genres was a huge asset to the fast-paced production of Silverdome. His expertise in cinema-verite style shooting gave the film a gritty realism sure to captivate audiences.</p>
 
-Salami pork loin sirloin jowl beef ribs frankfurter burgdoggen ribeye flank. Cow tri-tip shank t-bone ham picanha strip steak frankfurter sausage pancetta pork loin doner chuck shoulder. Jowl strip steak shank ball tip, chuck landjaeger chicken bacon. T-bone cow boudin, tri-tip sausage spare ribs corned beef flank short loin tongue shoulder. Porchetta corned beef prosciutto strip steak brisket pork. Fatback pork beef ribs, tri-tip shank shankle sausage drumstick tenderloin meatball venison.
+      <p id="regnerBio" style="display: none"><strong>Producer - </strong>Having grown up a mere 5 miles from the Pontiac Silverdome, some of Chris' earliest memories from his youth are things like his brother taking him to watch Billy Sims mesmerize the crowd and Barry Sanders slip tackle after tackle on the Silverdome turf.  Long drawn to the moving-image, Chris spent several years in Hollywood working on sets of music videos, commercials and movies alongside stars like Steve Guttenberg, John Laroquette, and Jonah Hill.  Upon returning to metro Detroit Chris became a cameraman for a local news station before starting his own production company.</p>
 
-Tail alcatra corned beef venison flank shankle. Biltong porchetta pork strip steak filet mignon pork belly pastrami salami cow brisket landjaeger. Turkey meatball capicola shank. Jerky chuck cow, venison boudin pork ground round turducken brisket short ribs salami fatback meatloaf. Short ribs ham ground round, sausage ribeye sirloin flank porchetta kielbasa t-bone. Kevin short ribs chicken pork belly capicola, turkey ground round. Andouille turkey burgdoggen shankle.
+      <p id="kingsburyBio" style="display: none"><strong>Executive Producer - </strong>Currently the head coach of Texas Tech University's football team, Kliff is one of the most decorated NCAA quarterbacks of all-time. He holds multiple NCAA records for passing as QB for the Red Raiders and now runs one of the most innovative offenses in college football. As a QB in the NFL for several years Kliff was drawn to the Silverdome story and used his experiences and knowledge of the game to help advise the film in many capacities.</p>
 
-Jowl ham hock beef pork belly corned beef chuck shankle leberkas. Jowl flank meatball salami kevin short loin, porchetta brisket pig ribeye andouille chicken shank t-bone boudin. Beef tail burgdoggen pig, fatback short ribs shoulder. Turkey swine ham hock ball tip pastrami tenderloin, ham pork hamburger turducken picanha meatloaf alcatra. Rump tongue spare ribs ribeye porchetta picanha jowl pancetta ham hock meatball meatloaf sausage chuck shoulder fatback.</p>
+      <p id="hartmannBio" style="display: none"><strong>Executive Producer - </strong>Former NFL Punter and Kickoff Specialist, Brett has ties to the area from his days playing for Central Michigan University, and played in the Motor City Bowl at Ford Field in Detroit.  Brett was originally signed and then played for the Houston Texans as an undrafted free agent in 2011.  Brett's connections in Michigan and long-time friendship with Glenn Pakulak were a huge asset to the film.</p>
+
     </div>
   </section>
 </div>
@@ -139,6 +128,11 @@ Jowl ham hock beef pork belly corned beef chuck shankle leberkas. Jowl flank mea
     </div>
 
   </footer>
+
+<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="../assets/js/main.js"></script>
 
 </body>
 </html>
