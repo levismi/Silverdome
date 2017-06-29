@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
+    // ScrollMagic Init
+    var controller = new ScrollMagic.Controller();
+
     $('.castCrew').each(function(){
-      // ScrollMagic Init
-      var controller = new ScrollMagic.Controller();
 
       // Build Scene
       var fadeScene1 = new ScrollMagic.Scene({
@@ -16,7 +17,6 @@ $(document).ready(function(){
 
     });
 
-    var controller = new ScrollMagic.Controller();
 
     var pinScene = new ScrollMagic.Scene({
       triggerElement: '.cast_glenn',
@@ -26,7 +26,6 @@ $(document).ready(function(){
     .setPin('.cast_glenn', {pushFollowers: false})
     .addTo(controller);
 
-    var controller = new ScrollMagic.Controller();
 
     var pinScene = new ScrollMagic.Scene({
       triggerElement: '.cast_carmen',
@@ -36,7 +35,6 @@ $(document).ready(function(){
     .setPin('.cast_carmen', {pushFollowers: false})
     .addTo(controller);
 
-    var controller = new ScrollMagic.Controller();
 
     var pinScene = new ScrollMagic.Scene({
       triggerElement: '.cast_francisco',
@@ -46,7 +44,6 @@ $(document).ready(function(){
     .setPin('.cast_francisco', {pushFollowers: false})
     .addTo(controller);
 
-    var controller = new ScrollMagic.Controller();
 
     var pinScene = new ScrollMagic.Scene({
       triggerElement: '.crew',
