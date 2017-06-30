@@ -375,11 +375,12 @@ footer {
 .cast_glenn, .cast_carmen, .cast_francisco {
   margin: 0;
   padding: 20px 0 20px 0;
-  height: 100vh;
+  height: 160vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   .cast_glenn section, .cast_carmen section, .cast_francisco section {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -502,10 +503,15 @@ section.fade-in {
 
 .story {
   background-color: rgba(15, 15, 15, 0.1);
+  margin: 40px;
   width: calc(83.33333% - 36.66667px);
   float: left;
   margin-left: 20px;
-  margin-left: calc(8.33333% - 21.66667px + 40px); }
+  margin-left: calc(8.33333% - 21.66667px + 40px);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
   .story section {
     width: calc(83.33333% - 36.66667px);
     float: left;

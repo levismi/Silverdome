@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title> Silverdome </title>
+  <title> {{ page.title }} </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/all.css" />
@@ -24,29 +24,7 @@
   </header>
 
   <div class="content">
-    <div class="hero" data-parallax="scroll" data-image="../img/hero-bg.jpg">
-  <!-- <img src="/assets/img/football_field1.png" alt="hero-text"> -->
-  <h1>SILVERDOME</h1>
-  <p>A Player's Story</p>
-
-<div class="articles">
-  <a href="https://sports.yahoo.com/news/silverdome-story-ruined-quarterback-ruined-stadium-184457492.html" target="_blank">
-    <div class="box_large">
-    </div>
-  </a>
-
-  <a href="http://www.theoaklandpress.com/general-news/20170615/silverdome-stars-in-football-nostalgia-movie-by-independent-filmmakers" target="_blank">
-    <div class="box_small-1">
-    </div>
-  </a>
-
-  <a href="#">
-    <div class="box_small-2">
-    </div>
-  </a>
-</div>
-</div>
-
+    {{ content }}
   </div>
 
   <footer>
@@ -62,6 +40,13 @@
     </div>
 
   </footer>
+
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animations.gsap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="./assets/js/main.js"></script>
 
 </body>
 </html>
