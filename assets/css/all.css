@@ -201,7 +201,8 @@ h1 {
 
 h2 {
   margin: 10px;
-  text-align: center; }
+  text-align: center;
+  display: block; }
 
 h3 {
   color: white;
@@ -222,7 +223,7 @@ li {
   margin-left: 20px; }
 
 nav {
-  background-color: #2d2626;
+  background-color: #333333;
   width: 100%;
   height: 55px; }
   nav a {
@@ -240,38 +241,15 @@ nav {
     top: 10%; }
 
 .hero {
-  background-image: url("../img/hero-bg.jpg");
+  background-image: url("../img/yahoo_silverdome.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 200vh;
+  height: 180vh;
   width: 100%;
   text-align: center;
   margin-top: 0; }
-  .hero img {
-    width: calc(66.66667% - 33.33333px);
-    float: left;
-    margin-left: 20px;
-    margin-left: calc(16.66667% - 23.33333px + 40px);
-    margin-top: 100px; }
-  .hero h1 {
-    color: white;
-    position: absolute;
-    margin: 0;
-    left: 0;
-    top: 15%;
-    width: 100%;
-    text-align: center;
-    font-size: 800%; }
-  .hero p {
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 35%;
-    width: 100%;
-    text-align: center;
-    font-size: 200%; }
 
 .articles {
   position: relative;
@@ -280,9 +258,14 @@ nav {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px; }
+  .articles h1 {
+    font-size: 180%;
+    color: white;
+    top: -2em;
+    margin-top: 30px; }
 
 footer {
-  background-color: #2d2626;
+  background-color: #333333;
   clear: both;
   height: 120px;
   text-align: center; }
@@ -316,6 +299,43 @@ footer {
   width: 40px;
   height: 40px; }
 
+/* the important styles */
+.arrow-wrap {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: -20em;
+  margin-left: -6em;
+  background: #111;
+  width: 6em;
+  height: 6em;
+  padding: 2em;
+  border-radius: 50%;
+  font-size: 0.5em;
+  display: block; }
+
+.arrow {
+  position: relative;
+  top: 75%;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform: rotate(360deg); }
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  top: -3.2em;
+  left: -3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform: rotate(360deg); }
+
 .box_large {
   height: 150px;
   width: 150px;
@@ -334,13 +354,13 @@ footer {
   box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4); }
 
 .box_small-1 {
-  height: 75px;
-  width: 75px;
+  height: 150px;
+  width: 150px;
   text-align: center;
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-image: url("../img/placeholder.jpg");
+  background-image: url("../img/oaklandpress.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -352,13 +372,13 @@ footer {
   box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4); }
 
 .box_small-2 {
-  height: 75px;
-  width: 75px;
+  height: 150px;
+  width: 150px;
   text-align: center;
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-image: url("../img/placeholder.jpg");
+  background-image: url("../img/terezOwens.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -368,9 +388,24 @@ footer {
   -webkit-box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4);
   box-shadow: 4px 4px 4px rgba(15, 15, 15, 0.4); }
 
+.trailerHero {
+  background-image: url("../img/trailer_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 180vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 0; }
+
 .trailer {
-  padding: 20px 40px;
-  height: 550px; }
+  padding-top: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 500px;
+  width: 60%;
+  margin-left: calc(16.66667% - 23.33333px + 40px); }
 
 .cast_glenn, .cast_carmen, .cast_francisco {
   margin: 0;
@@ -414,7 +449,7 @@ footer {
 .cast_francisco {
   background-image: url("../img/francisco.png"); }
   .cast_francisco section {
-    margin-left: calc(58.33333% - 31.66667px + 40px); }
+    margin-left: calc(8.33333% - 21.66667px + 40px); }
 
 .crew {
   margin: 0;
@@ -452,7 +487,7 @@ footer {
   padding: 0;
   display: inline-block;
   float: left;
-  height: 73%;
+  height: 100%;
   width: 40%;
   letter-spacing: 1px; }
   .crew_list li {
@@ -464,9 +499,10 @@ footer {
     color: grey; }
 
 .crew_display {
+  margin: 0;
   display: inline-block;
   float: right;
-  height: 73%;
+  height: 90%;
   width: 60%;
   overflow: scroll;
   text-align: left; }
@@ -487,35 +523,25 @@ section.fade-in {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 400px;
+  background-attachment: fixed;
+  height: 180vh;
   width: 100%;
-  background-color: #fff;
   text-align: center;
   margin-top: 0; }
-  .hero_story p {
+  .hero_story section {
+    margin-left: calc(20.83333% - 24.16667px + 40px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(35, 43, 56, 0.8);
     color: white;
-    position: absolute;
-    left: 0;
-    top: 28%;
-    width: 100%;
-    text-align: center;
-    font-size: 175%; }
-
-.story {
-  background-color: rgba(15, 15, 15, 0.1);
-  margin: 40px;
-  width: calc(83.33333% - 36.66667px);
-  float: left;
-  margin-left: 20px;
-  margin-left: calc(8.33333% - 21.66667px + 40px);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-  .story section {
-    width: calc(83.33333% - 36.66667px);
-    float: left;
-    margin-left: 20px;
-    margin-left: calc(8.33333% - 21.66667px + 40px); }
+    padding: 20px;
+    text-align: left;
+    height: 230px;
+    width: 55%;
+    position: relative;
+    top: 55%;
+    left: 0; }
 
 

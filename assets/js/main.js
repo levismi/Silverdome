@@ -1,17 +1,17 @@
+
 $(document).ready(function(){
 
   // ScrollMagic Init
   var controller = new ScrollMagic.Controller();
 
-  // Build Scene
-  $('.castCrew').each(function(){
+  // Build Fade Scene
+  $('.fadeIn').each(function(){
     var fadeScene1 = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0,
-      offset: -90
+      offset: -90,
     })
     .setClassToggle(this, 'fade-in') //add fade-in class
-    .addIndicators()
     .addTo(controller);
   });
 
@@ -48,28 +48,26 @@ $(document).ready(function(){
   .setPin('.crew', {pushFollowers: false})
   .addTo(controller);
 
-  // Parallax
+});
 
+  //this is where we apply opacity to the arrow
+$(window).scroll( function(){
 
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
 
-  $('#tedKluck').click(function(){
-    $('#kluckBio').toggle(500);
-  });
+  //get height of window
+  var windowHeight = $(window).height();
 
-  $('#travisAndrews').click(function(){
-    $('#andrewsBio').toggle(500);
-  });
+  //set position as percentage of how far the user has scrolled
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
 
-  $('#chrisRegner').click(function(){
-    $('#regnerBio').toggle(500);
-  });
-
-  $('#kliffKingsbury').click(function(){
-    $('#kingsburyBio').toggle(500);
-  });
-
-  $('#brettHartmann').click(function(){
-    $('#hartmannBio').toggle(500);
-  });
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
 
 });

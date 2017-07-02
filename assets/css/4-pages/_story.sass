@@ -3,33 +3,23 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center
-  height: 400px
+  background-attachment: fixed
+  height: 180vh
   width: 100%
-  background-color: #fff
   text-align: center
   margin-top: 0
 
-  p
-    color: white
-    position: absolute
-    left: 0
-    top: 28%
-    width: 100%
-    text-align: center
-    font-size: 175%
-
-.story
-
-  background-color: $box-shadow-light
-  margin: 40px
-
-  @include grid-column(10)
-  @include grid-push(1)
-
-  @include border-top-radius(5px)
-  @include border-bottom-radius(5px)
-
   section
+    @include grid-push(2.5)
+    @include border-top-radius(10px)
+    @include border-bottom-radius(10px)
 
-    @include grid-column(10)
-    @include grid-push(1)
+    background: $transparent-grey
+    color: white
+    padding: 20px
+    text-align: left
+    height: 230px
+    width: 55%
+    position: relative
+    top: 55%
+    left: 0

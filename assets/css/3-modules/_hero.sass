@@ -1,41 +1,24 @@
 .hero
-  background-image: url("../img/hero-bg.jpg")
+  background-image: url("../img/yahoo_silverdome.png")
   background-repeat: no-repeat
   background-size: cover
   background-position: center
   background-attachment: fixed
-  height: 200vh
+  height: 180vh
   width: 100%
   text-align: center
   margin-top: 0
-
-  img
-    @include grid-column(8)
-    @include grid-push(2)
-    margin-top: 100px
-
-  h1
-    color: white
-    position: absolute
-    margin: 0
-    left: 0
-    top: 15%
-    width: 100%
-    text-align: center
-    font-size: 800%
-
-  p
-    color: white
-    position: absolute
-    left: 0
-    top: 35%
-    width: 100%
-    text-align: center
-    font-size: 200%
 
 .articles
   position: relative
   top: 55%
   left: 0
+
+  h1
+    font-size: 180%
+    color: white
+    top: -2em
+    margin-top: 30px
+
 
   @include grid-column(12)

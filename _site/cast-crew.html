@@ -24,8 +24,35 @@
   </header>
 
   <div class="content">
-    <div class="cast_glenn">
-  <section class="castCrew" id="glennScene">
+    <script type="text/javascript">
+
+function bioSelector(element){
+  var text;
+  switch (element) {
+    case 'tedKluck':
+    text = "<h2>Ted Kluck</h2><p><strong>Screenwriter - </strong>winner of a Michigan Notable Book award in 2008 for his football memoir, Paper Tiger: One Athlete's Journey to the Underbelly of Pro Football. He has authored books on topics ranging from Mike Tyson to the evangelical church, and his journalism has appeared in ESPN the Magazine, Christianity Today and many other outlets.</p>";
+      break;
+    case 'travisAndrews':
+    text = "<h2>Travis Andrews</h2><p><strong>Director - </strong>An industry veteran that has worked as a director of photography for the past 10 years in broadcast television, Travis' specialty with Reality and Documentary genres was a huge asset to the fast-paced production of Silverdome. His expertise in cinema-verite style shooting gave the film a gritty realism sure to captivate audiences.</p>";
+      break;
+    case 'chrisRegner':
+    text = "<h2>Chris Regner</h2><p><strong>Producer - </strong>Having grown up a mere 5 miles from the Pontiac Silverdome, some of Chris' earliest memories from his youth are things like his brother taking him to watch Billy Sims mesmerize the crowd and Barry Sanders slip tackle after tackle on the Silverdome turf.  Long drawn to the moving-image, Chris spent several years in Hollywood working on sets of music videos, commercials and movies alongside stars like Steve Guttenberg, John Laroquette, and Jonah Hill.  Upon returning to metro Detroit Chris became a cameraman for a local news station before starting his own production company.</p>";
+      break;
+    case 'kliffKingsbury':
+    text = "<h2>Kliff Kingsbury</h2><p><strong>Executive Producer - </strong>Currently the head coach of Texas Tech University's football team, Kliff is one of the most decorated NCAA quarterbacks of all-time. He holds multiple NCAA records for passing as QB for the Red Raiders and now runs one of the most innovative offenses in college football. As a QB in the NFL for several years Kliff was drawn to the Silverdome story and used his experiences and knowledge of the game to help advise the film in many capacities.</p>";
+      break;
+    case 'brettHartmann':
+    text = "<h2>Brett Hartmann</h2><p><strong>Executive Producer - </strong>Former NFL Punter and Kickoff Specialist, Brett has ties to the area from his days playing for Central Michigan University, and played in the Motor City Bowl at Ford Field in Detroit.  Brett was originally signed and then played for the Houston Texans as an undrafted free agent in 2011.  Brett's connections in Michigan and long-time friendship with Glenn Pakulak were a huge asset to the film.</p>";
+      break;
+    default:
+    text = "<h2>Ted Kluck</h2><p><strong>Screenwriter - </strong>winner of a Michigan Notable Book award in 2008 for his football memoir, Paper Tiger: One Athlete's Journey to the Underbelly of Pro Football. He has authored books on topics ranging from Mike Tyson to the evangelical church, and his journalism has appeared in ESPN the Magazine, Christianity Today and many other outlets.</p>";
+  }
+  document.getElementById('blankBio').innerHTML = text;
+}
+</script>
+
+<div class="cast_glenn">
+  <section class="fadeIn" id="glennScene">
     <h2>Glenn Pakulak</h2>
     <div class="scroll">
     <p>Plays 'Jack Franco', an ex-quarterback in middle-age, whose best days
@@ -44,7 +71,7 @@
 </div>
 
 <div class="cast_carmen">
-  <section class="castCrew" id="carmenScene">
+  <section class="fadeIn" id="carmenScene">
     <h2>Carmen Serano</h2>
     <div class="scroll">
     <p>Franco’s wife, 'Carmen Franco', finds her broken
@@ -69,7 +96,7 @@
 </div>
 
 <div class="cast_francisco">
-  <section class="castCrew" id="franciscoScene">
+  <section class="fadeIn" id="franciscoScene">
     <h2>Francisco Posada</h2>
     <div class="scroll">
     <p>Starring in the role of Jack and Carmen Franco's son, 'Alex', is SAG
@@ -84,28 +111,19 @@
 
 
 <div class="crew">
-  <section class="castCrew" id="crewScene">
-    <h2>The Crew</h2>
+  <section class="fadeIn" id="crewScene">
     <div class="crew_list" id="borderRight">
+      <h2>The Crew</h2>
       <ul>
-        <li id="tedKluck"><h3>Ted Kluck</h3></li>
-        <li id="travisAndrews"><h3>Travis Andrews</h3></li>
-        <li id="chrisRegner"><h3>Chris Regner</h3></li>
-        <li id="kliffKingsbury"><h3>Kliff Kingsbury</h3></li>
-        <li id="brettHartmann"><h3>Brett Hartmann</h3></li>
+        <li id="tedKluck" onclick="bioSelector('tedKluck')"><h3>Ted Kluck</h3></li>
+        <li id="travisAndrews" onclick="bioSelector('travisAndrews')"><h3>Travis Andrews</h3></li>
+        <li id="chrisRegner" onclick="bioSelector('chrisRegner')"><h3>Chris Regner</h3></li>
+        <li id="kliffKingsbury" onclick="bioSelector('kliffKingsbury')"><h3>Kliff Kingsbury</h3></li>
+        <li id="brettHartmann" onclick="bioSelector('brettHartmann')"><h3>Brett Hartmann</h3></li>
       </ul>
     </div>
     <div class="crew_display">
-      <p id="kluckBio" style="display: none"><strong>Screenwriter - </strong>winner of a Michigan Notable Book award in 2008 for his football memoir, Paper Tiger: One Athlete's Journey to the Underbelly of Pro Football. He has authored books on topics ranging from Mike Tyson to the evangelical church, and his journalism has appeared in ESPN the Magazine, Christianity Today and many other outlets.</p>
-
-      <p id="andrewsBio" style="display: none"><strong>Director - </strong>An industry veteran that has worked as a director of photography for the past 10 years in broadcast television, Travis' specialty with Reality and Documentary genres was a huge asset to the fast-paced production of Silverdome. His expertise in cinema-verite style shooting gave the film a gritty realism sure to captivate audiences.</p>
-
-      <p id="regnerBio" style="display: none"><strong>Producer - </strong>Having grown up a mere 5 miles from the Pontiac Silverdome, some of Chris' earliest memories from his youth are things like his brother taking him to watch Billy Sims mesmerize the crowd and Barry Sanders slip tackle after tackle on the Silverdome turf.  Long drawn to the moving-image, Chris spent several years in Hollywood working on sets of music videos, commercials and movies alongside stars like Steve Guttenberg, John Laroquette, and Jonah Hill.  Upon returning to metro Detroit Chris became a cameraman for a local news station before starting his own production company.</p>
-
-      <p id="kingsburyBio" style="display: none"><strong>Executive Producer - </strong>Currently the head coach of Texas Tech University's football team, Kliff is one of the most decorated NCAA quarterbacks of all-time. He holds multiple NCAA records for passing as QB for the Red Raiders and now runs one of the most innovative offenses in college football. As a QB in the NFL for several years Kliff was drawn to the Silverdome story and used his experiences and knowledge of the game to help advise the film in many capacities.</p>
-
-      <p id="hartmannBio" style="display: none"><strong>Executive Producer - </strong>Former NFL Punter and Kickoff Specialist, Brett has ties to the area from his days playing for Central Michigan University, and played in the Motor City Bowl at Ford Field in Detroit.  Brett was originally signed and then played for the Houston Texans as an undrafted free agent in 2011.  Brett's connections in Michigan and long-time friendship with Glenn Pakulak were a huge asset to the film.</p>
-
+      <p id="blankBio"></p>
     </div>
   </section>
 </div>
@@ -127,10 +145,8 @@
   </footer>
 
 <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animations.gsap.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script type="text/javascript" src="./assets/js/main.js"></script>
 
 </body>
