@@ -202,12 +202,14 @@ h1 {
 h2 {
   margin: 10px;
   text-align: center;
-  display: block; }
+  display: block;
+  font-variant: small-caps; }
 
 h3 {
   color: white;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-variant: small-caps; }
 
 a {
   color: #fff;
@@ -268,7 +270,9 @@ footer {
   background-color: #333333;
   clear: both;
   height: 120px;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  bottom: 0; }
   footer ul {
     text-decoration: none;
     text-align: center;
@@ -335,6 +339,18 @@ footer {
   border-width: 3em 3em 0 3em;
   border-color: #111 transparent transparent transparent;
   -webkit-transform: rotate(360deg); }
+
+::-webkit-scrollbar {
+  width: 12px;
+  /* for vertical scrollbars */
+  height: 0px;
+  /* for horizontal scrollbars */ }
+
+::-webkit-scrollbar-track {
+  background: inherit; }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); }
 
 .box_large {
   height: 150px;
@@ -447,7 +463,8 @@ footer {
     margin-left: calc(58.33333% - 31.66667px + 40px); }
 
 .cast_francisco {
-  background-image: url("../img/francisco.png"); }
+  background-image: url("../img/francisco.png");
+  background-position: top; }
   .cast_francisco section {
     margin-left: calc(8.33333% - 21.66667px + 40px); }
 
@@ -492,6 +509,7 @@ footer {
   letter-spacing: 1px; }
   .crew_list li {
     margin: 0;
+    width: 100%;
     text-align: left;
     float: left; }
   .crew_list li:hover {

@@ -1,0 +1,15 @@
+::-webkit-scrollbar
+  {
+    width: 12px;  /* for vertical scrollbars */
+    height: 0px; /* for horizontal scrollbars */
+  }
+
+::-webkit-scrollbar-track
+  {
+    background: inherit;
+  }
+
+::-webkit-scrollbar-thumb
+  {
+    background: rgba(0, 0, 0, 0.5);
+  }
